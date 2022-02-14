@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  resources :manufacturers
   get 'faq', to: 'pages#faq'
   get 'about', to: 'pages#about'
   root 'pages#home'
