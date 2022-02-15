@@ -3,20 +3,17 @@
 require 'rails_helper'
 
 # Specs in this file have access to a helper object that includes
-# the StaticPagesHelper. For example:
+# the PagesHelper. For example:
 #
-# describe StaticPagesHelper do
-#   describe "string concat" do
-#     it "concats two strings with spaces" do
-#       expect(helper.concat_strings("this","that")).to eq("this that")
-#     end
-#   end
-# end
-# RSpec.describe StaticPagesHelper, type: :helper do
-#   describe 'Home page' do
-#     it "should have h1 'StaticPages#home'" do
-#       visit '/'
-#       page.should have_title('Home | L4CHLAB-DB')
-#     end
+
+RSpec.describe PagesHelper, type: :helper do
+  pending "add some examples to (or delete) #{__FILE__}"
+#  describe 'Home page' do
+#    before do
+#      visit root_path
+#    end
+#    it 'should have the correct title' do
+#      page.should have_title('Home | L4CHLAB-DB')
+#    end
 #  end
-# end
+end
