@@ -82,5 +82,5 @@ test:
 production:
   <<: *default
   database: l4chlab_db_production
-  username: l4chlab_db
+  username: <%= ENV["L4CHLAB_DB_DATABASE_USER"] %>
   password: <%= ENV["L4CHLAB_DB_DATABASE_PASSWORD"] %>
