@@ -7,6 +7,7 @@ RSpec.describe 'Pages', type: :request do
     it 'returns http success' do
       get '/'
       expect(response).to have_http_status(:success)
+      expect(response.body).to include('<title>Home | L4CHLAB-DB</title>')
     end
   end
 
@@ -14,6 +15,7 @@ RSpec.describe 'Pages', type: :request do
     it 'returns http success' do
       get '/about'
       expect(response).to have_http_status(:success)
+      expect(response.body).to include('<title>About | L4CHLAB-DB</title>')
     end
   end
 
@@ -21,6 +23,7 @@ RSpec.describe 'Pages', type: :request do
     it 'returns http success' do
       get '/faq'
       expect(response).to have_http_status(:success)
+      expect(response.body).to include('<title>FAQ | L4CHLAB-DB</title>')
     end
   end
 
@@ -28,6 +31,7 @@ RSpec.describe 'Pages', type: :request do
     it 'returns http success' do
       get '/help'
       expect(response).to have_http_status(:success)
+      expect(response.body).to include('<title>Help | L4CHLAB-DB</title>')
     end
   end
 end
